@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/egdw/real_robot/devel/include/**",
+        "/home/egdw/project/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/egdw/real_robot/src/ros_astra_camera/include/**",
+        "/home/egdw/real_robot/src/depthimage_to_laserscan/include/**",
+        "/home/egdw/real_robot/src/orbslam3_ros/include/**",
+        "/home/egdw/real_robot/src/serial/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

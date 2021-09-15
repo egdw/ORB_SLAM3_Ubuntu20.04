@@ -31,7 +31,7 @@
 #include <boost/serialization/vector.hpp>
 #include <boost/serialization/assume_abstract.hpp>
 
-#include <Eigen/Geometry>
+#include <eigen3/Eigen/Geometry>
 
 namespace ORB_SLAM3 {
     class GeometricCamera {
