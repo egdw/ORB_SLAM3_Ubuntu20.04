@@ -1,14 +1,15 @@
 # Installation
-I got some useful informations from this website before create this project. Thanks these authors! 
-[url](https://github.com/UZ-SLAMLab/ORB_SLAM3)
-[url](https://github.com/Mauhing/ORB_SLAM3/blob/master/README.md)
+Tested on 10 December 2022
+
+I got some useful information from these websites before create this project. Thanks the authors! 
+Master [url](https://github.com/UZ-SLAMLab/ORB_SLAM3)
+For Ubuntu 20.04 [url](https://github.com/Mauhing/ORB_SLAM3/blob/master/README.md)
 [url](https://github.com/shanpenghui/ORB_SLAM3_Fixed)
 [url](https://answers.ros.org/question/392897/orb-slam3-for-ubunt2004/)
 
-### Modification
+## Modification
 
-## OpenCV version 4.5.1 
-[url](https://docs.opencv.org/master/d0/d3d/tutorial_general_install.html)
+## OpenCV version 4.5.1 [url](https://docs.opencv.org/master/d0/d3d/tutorial_general_install.html)
 
 ```
 git clone https://github.com/opencv/opencv
@@ -22,7 +23,7 @@ make -j4
 sudo make install
 ```
 
-Or if already installed:
+Or if already installed a previous version:
 ```
 pip3 install --upgrade opencv-python==4.5.1
 ```
@@ -107,7 +108,8 @@ sudo apt install libeigen3-dev
 ```
 
 # Install OpenCV 3.2.0
-The ORB-SLAM 3 was test by
+The ORB-SLAM 3 was tested by
+
 ```
 cd ~
 mkdir Dev && cd Dev
@@ -133,8 +135,9 @@ cd build
 cmake -D CMAKE_BUILD_TYPE=Release -D WITH_CUDA=OFF -D CMAKE_INSTALL_PREFIX=/usr/local ..
 make -j 3
 sudo make install
-
 ```
+
+Or test with OpenCV 4.5.1**
 
 # Install Pangolin
 Now, we install the Pangolin. I used the commit version 86eb4975fc4fc8b5d92148c2e370045ae9bf9f5d
@@ -242,7 +245,7 @@ We use the new thread and chrono functionalities of C++11.
 We use [Pangolin](https://github.com/stevenlovegrove/Pangolin) for visualization and user interface. Dowload and install instructions can be found at: https://github.com/stevenlovegrove/Pangolin.
 
 ## OpenCV
-We use [OpenCV](http://opencv.org) to manipulate images and features. Dowload and install instructions can be found at: http://opencv.org. **Required at leat 3.0. Tested with OpenCV 3.2.0**.
+We use [OpenCV](http://opencv.org) to manipulate images and features. Dowload and install instructions can be found at: http://opencv.org. **Required at least 4.4. Tested with OpenCV 4.5.1**.
 
 ## Eigen3
 Required by g2o (see below). Download and install instructions can be found at: http://eigen.tuxfamily.org. **Required at least 3.1.0**.
