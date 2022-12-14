@@ -1,10 +1,33 @@
 # Installation
-I got some useful informations from this website before create this project. Thanks to author! 
+I got some useful informations from this website before create this project. Thanks these authors! 
+[url](https://github.com/UZ-SLAMLab/ORB_SLAM3)
 [url](https://github.com/Mauhing/ORB_SLAM3/blob/master/README.md)
+[url](https://github.com/shanpenghui/ORB_SLAM3_Fixed)
+[url](https://answers.ros.org/question/392897/orb-slam3-for-ubunt2004/)
 
-## Modification
+### Modification
 
-### Error1:
+## OpenCV version 4.5.1 
+[url](https://docs.opencv.org/master/d0/d3d/tutorial_general_install.html)
+
+```
+git clone https://github.com/opencv/opencv
+git -C opencv checkout 4.5.1
+git clone https://github.com/opencv/opencv_contrib
+git -C opencv_contrib checkout 4.5.1
+git clone https://github.com/opencv/opencv_extra
+git -C opencv_extra checkout 4.5.1
+cmake ..
+make -j4
+sudo make install
+```
+
+Or if already installed:
+```
+pip3 install --upgrade opencv-python==4.5.1
+```
+
+## Error1:
 
 ```
 In file included from /usr/local/include/pangolin/utils/signal_slot.h:3,
@@ -42,7 +65,7 @@ else()
 endif()
 ```
 
-## error2
+## Error2
 
 This is an error due to the Eigen version.
 
